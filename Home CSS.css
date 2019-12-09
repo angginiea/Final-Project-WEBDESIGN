@@ -1,0 +1,270 @@
+
+/* -------------STYLE FOR BODY-------------- */
+body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
+margin:.5em; 
+padding:0; 
+height:100%; 
+background-color:#ffffff;
+color:#000000;  
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:.9em;
+}
+
+a { /* -------For styling and set the style of hyperlink in the page-------------- */
+color:#cc0000;
+text-decoration:underline;
+}
+
+a:hover { /* -------For styling and set the style of hover. Hover used to select elements when you mouse over them-------------- */
+color:#616161;
+text-decoration:none;
+}
+
+blockquote {  /* -------For styling the quotation element-------------- */
+margin:1em;
+padding:.5em .5em .5em 85px;
+background-color:#D7ECF8;
+}
+
+hr {  /* -----To set and style the horizontal line that separate document sections------- */
+margin-bottom:20px;
+border:none;
+width:99%;
+color:#eeeeee;
+background-color:#eeeeee;
+height:1px;
+clear:both;
+}
+
+td.desc {  /* -------For styling and set the style of cell (table data)------- */
+padding:4px;
+text-align:left;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.7em;
+}
+
+
+#postHeader {  /* -------For styling and set the font and its padding on navigation bar where there are menu like Home, contact, about us, etc.----------- */	
+margin:0 auto;
+padding:0 .2em .3em .2em;
+width:720px;
+text-align:right;
+vertical-align: middle;	
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.7em;
+text-transform:uppercase;
+}
+
+#centerColumn {  /* -------To make the content on the navigation bar and header centered only in the middle of the page. Not fully from the left to right page.------------ */	
+margin:0 auto;
+padding:1em;
+width:720px;
+text-align:left;
+vertical-align: middle;	
+background-color:#ffffff;
+}
+
+#centerColumn h2 { /* -------To style all the h2 sentence on the center column: in their font-family, margin, font-size, and padding------------ */	
+margin:0 0 -.5em 0;
+padding:.75em 0 0 0;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.1em;
+}
+
+#centerColumn h3 { /* -------To style all the h3 sentence on the center column: in their font-family, margin, font-size, and padding------------ */
+margin:0 0 -.5em 0;
+padding:.75em 0 0 0;
+font-size:.8em;
+font-weight:lighter;
+letter-spacing:.1em;
+}
+
+#navbar { /* -------To style the navigation bar background------------ */
+margin:-1em -1em 0 -1em; /* Mozzila attributes */
+padding:1em 0 1em 0 !important; /* IE specific attributes */
+padding:1em 0 0 0;
+background-color:#cccccc;
+}
+
+#navbar ul { /* -------To style and set The block element used to designate unordered list on the navigation bar------------ */
+margin:0 0 -1em .3em !important;
+margin:.3em 0 0 .3em;
+padding:0 0 1em 0;
+list-style:none;
+background-color:#cccccc;
+}
+
+#navbar li { /* -------To style and set The block element used to represent an item in a list on the navigation bar------------ */
+margin:0 0 0 -.27em;
+padding:.2em 0 .2em 0 !important;
+padding:1em 0 1em 0;
+list-style:none;
+display:inline;
+background-color:#cccccc;
+}
+
+#navbar li a { /* -------To style and set The block element used to represent an item in a list on the navigation bar and also the hyperlink in navigation bar------------ */
+margin:0 0 0 0;
+padding:1em .5em 1em .5em !important;
+padding:1em .5em 0 .5em;
+}
+
+#header { /* -------To style and set The header of the page------------ */
+margin:0 -1em 0 -1em;
+background: 
+padding:0 0 0 0;
+height:143px;
+background-color:#cccccc;
+border-top:1px solid #ffffff;
+}
+
+#header h1 { /* -------To style and set The h1 sentence on the header of the page------------ */
+margin:0 0 -14px 10px;
+padding:10px 0 0 .9em;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.7em;
+font-weight:lighter;
+letter-spacing:.15em;
+color:#000000;
+}
+
+#header h2 { /* -------To style and set The h2 sentence on the header of the page------------ */
+margin:0 0 0 0;
+padding:1em 0 0 30px;
+font-size:.9em;
+font-weight:300;
+letter-spacing:.1em;
+color:#000000;
+}
+
+#cell_1 { /* -------To style and set The first cell (bigger than box) after the header------------ */
+margin:0 5px 1em 0;
+padding:8px;
+float:left;
+width:210px;
+background-color:#cccccc;
+}
+
+#cell_2 { /* -------To style and set The second cell (bigger than box) after the header------------ */
+margin:0 14px 1em 14px;
+padding:8px;
+float:left;
+width:210px;
+background-color:#cccccc;
+}
+
+#cell_3 { /* -------To style and set The third cell (bigger than box) after the header------------ */
+margin:0 0 1em 5px;
+padding:8px;
+float:left;
+width:210px;
+background-color:#cccccc;
+}
+
+#cell_1 p, #cell_2 p, #cell_3 p { /* -------To style and set The pharagraph on first, second, third cell (bigger than box) after the header------------ */
+font-size:.75em;
+color:#000000;
+}
+
+#cell_1 h2 { /* -------To style h2 sentence on first cell (bigger than box) after the header------------ */
+margin:0 0 -4px 0 !important;
+margin:0 0 -20px 0;
+padding:4px 0 10px 0;
+font-family:Georgia, "Times New Roman", Times, serif;
+color:#000000;
+font-weight:bold;
+}
+
+#cell_2 h2 { /* -------To style h2 sentence on The second cell (bigger than box) after the header------------ */
+margin:0 0 -4px 0 !important;
+margin:0 0 -20px 0;
+padding:4px 0 10px 0;
+font-family:Georgia, "Times New Roman", Times, serif;
+color:#000000;
+font-weight:bold;
+}
+
+#cell_3 h2 { /* -------To style h2 sentence on The third cell (bigger than box) after the header------------ */
+margin:0 0 -4px 0 !important;
+margin:0 0 -20px 0;
+padding:4px 0 10px 0;
+font-family:Georgia, "Times New Roman", Times, serif;
+color:#000000;
+font-weight:bold;
+}
+
+.right { /* -------To set the class right div------------ */
+float:right;
+margin:5px;
+padding:2px;
+}
+
+.left { /* -------To set the class left div------------ */
+float:left;
+margin:5px;
+padding:2px;
+}
+
+.center { /* -------To set the class center div------------ */
+width:auto;
+margin-left:auto;
+margin-right:auto;
+}
+
+#box_1 { /* -------To style and set The first box after the header------------ */
+margin:0 5px 2em 0;
+padding:8px;
+float:left;
+width:150px;
+background-color:#cccccc;
+}
+
+#box_2 { /* -------To style and set The second box after the header------------ */
+margin:0 7px 2em 14px;
+padding:8px;
+float:left;
+width:150px;
+background-color:#cccccc;
+}
+
+#box_3 { /* -------To style and set The third box after the header------------ */
+margin:0 14px 2em 7px;
+padding:8px;
+float:left;
+width:150px;
+background-color:#cccccc;
+}
+
+#box_4 { /* -------To style and set The forth box after the header------------ */
+margin:0 0 2em 5px;
+padding:8px;
+float:left;
+width:150px;
+background-color:#cccccc;
+}
+
+#box_1 p, #box_2 p, #box_3 p, #box_4 p { /* -------To style and set The pharagraph on first, second, third, and forth box after the header------------ */
+font-size:.75em;
+color:#000000;
+}
+
+#box_1 h2, #box_2 h2, #box_3 h2, #box_4 h2 { /* -------To style and set The h2 sentence first, second, third, and forth box after the header------------ */
+font-family:Georgia, "Times New Roman", Times, serif;
+color:#000000;
+font-size:.8em;
+} 
+
+
+#footer { /* -------To style and set The footer of the page------------ */
+position:relative;
+clear:both;
+bottom:0;
+margin:5em 0 0 0;
+padding:0;
+height:4em;
+line-height:4em;
+text-align:center;
+font-size:.7em;
+background-color:#cccccc;
+}
