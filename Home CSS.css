@@ -1,9 +1,14 @@
+/* To make the webpage responsive */
+@media screen and (max-width: 800px) {
+    body, a, hr, td.desc, #centerColumn, #centerColumn-image, #centerColumn h2, #centerColumn h3, #navbar, #navbar ul, navbar li, navbar li a, #header, #header h1, #header h2, #cell_1, #cell_2, #cell_3, #cell_1 p, #cell_2 p, #cell_3 p, #cell_1 h2, #cell_2 h2, #cell_3 h2, #footer
+    {width: 100%}
+}
 
 /* -------------STYLE FOR BODY-------------- */
 body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
 margin:.5em; 
 padding:0; 
-height:100%; 
+height:143px; 
 background-color:#ffffff;
 color:#000000;  
 text-align:center;
@@ -19,12 +24,6 @@ text-decoration:underline;
 a:hover { /* -------For styling and set the style of hover. Hover used to select elements when you mouse over them-------------- */
 color:#616161;
 text-decoration:none;
-}
-
-blockquote {  /* -------For styling the quotation element-------------- */
-margin:1em;
-padding:.5em .5em .5em 85px;
-background-color:#D7ECF8;
 }
 
 hr {  /* -----To set and style the horizontal line that separate document sections------- */
@@ -45,17 +44,6 @@ font-size:.7em;
 }
 
 
-#postHeader {  /* -------For styling and set the font and its padding on navigation bar where there are menu like Home, contact, about us, etc.----------- */	
-margin:0 auto;
-padding:0 .2em .3em .2em;
-width:720px;
-text-align:right;
-vertical-align: middle;	
-font-family:Verdana, Arial, Helvetica, sans-serif;
-font-size:.7em;
-text-transform:uppercase;
-}
-
 #centerColumn {  /* -------To make the content on the navigation bar and header centered only in the middle of the page. Not fully from the left to right page.------------ */	
 margin:0 auto;
 padding:1em;
@@ -63,6 +51,14 @@ width:720px;
 text-align:left;
 vertical-align: middle;	
 background-color:#ffffff;
+}
+
+#centerColumn-image {  /* -------To make the image on the part below header centered only in the middle of the page. Not fully from the left to right page.------------ */	
+margin:0 -1em 0 -1em;
+padding:1em;
+width:720px;
+vertical-align: middle;	
+background-color:#cccccc;
 }
 
 #centerColumn h2 { /* -------To style all the h2 sentence on the center column: in their font-family, margin, font-size, and padding------------ */	
@@ -194,73 +190,11 @@ color:#000000;
 font-weight:bold;
 }
 
-.right { /* -------To set the class right div------------ */
-float:right;
-margin:5px;
-padding:2px;
-}
-
-.left { /* -------To set the class left div------------ */
-float:left;
-margin:5px;
-padding:2px;
-}
-
-.center { /* -------To set the class center div------------ */
-width:auto;
-margin-left:auto;
-margin-right:auto;
-}
-
-#box_1 { /* -------To style and set The first box after the header------------ */
-margin:0 5px 2em 0;
-padding:8px;
-float:left;
-width:150px;
-background-color:#cccccc;
-}
-
-#box_2 { /* -------To style and set The second box after the header------------ */
-margin:0 7px 2em 14px;
-padding:8px;
-float:left;
-width:150px;
-background-color:#cccccc;
-}
-
-#box_3 { /* -------To style and set The third box after the header------------ */
-margin:0 14px 2em 7px;
-padding:8px;
-float:left;
-width:150px;
-background-color:#cccccc;
-}
-
-#box_4 { /* -------To style and set The forth box after the header------------ */
-margin:0 0 2em 5px;
-padding:8px;
-float:left;
-width:150px;
-background-color:#cccccc;
-}
-
-#box_1 p, #box_2 p, #box_3 p, #box_4 p { /* -------To style and set The pharagraph on first, second, third, and forth box after the header------------ */
-font-size:.75em;
-color:#000000;
-}
-
-#box_1 h2, #box_2 h2, #box_3 h2, #box_4 h2 { /* -------To style and set The h2 sentence first, second, third, and forth box after the header------------ */
-font-family:Georgia, "Times New Roman", Times, serif;
-color:#000000;
-font-size:.8em;
-} 
-
-
 #footer { /* -------To style and set The footer of the page------------ */
 position:relative;
 clear:both;
 bottom:0;
-margin:5em 0 0 0;
+margin:0 14px 1em 14px;
 padding:0;
 height:4em;
 line-height:4em;
