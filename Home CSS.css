@@ -1,14 +1,15 @@
 /* To make the webpage responsive */
 @media screen and (max-width: 800px) {
-    body, a, hr, td.desc, #centerColumn, #centerColumn-image, #centerColumn h2, #centerColumn h3, #navbar, #navbar ul, navbar li, navbar li a, #header, #header h1, #header h2, #cell_1, #cell_2, #cell_3, #cell_1 p, #cell_2 p, #cell_3 p, #cell_1 h2, #cell_2 h2, #cell_3 h2, #footer
-    {width: 100%}
+    body, a, a:hover, hr, #centerColumn-image1, #centerColumn h2, #centerColumn h3, #navbar, #navbar ul, #navbar li, #navbar li a, #header, #header h1, #header h2, #cell_1, #cell_2, #cell_3, #cell_1 p, #cell_2 p, #cell_3 p, #cell_1 h2, #cell_2 h2, #cell_3 h2,
+    {width: 100%;}
 }
 
 /* -------------STYLE FOR BODY-------------- */
 body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
 margin:.5em; 
 padding:0; 
-height:143px; 
+height:100%; 
+width: auto;
 background-color:#ffffff;
 color:#000000;  
 text-align:center;
@@ -30,34 +31,17 @@ hr {  /* -----To set and style the horizontal line that separate document sectio
 margin-bottom:20px;
 border:none;
 width:99%;
-color:#eeeeee;
-background-color:#eeeeee;
+color:#cccccc;
 height:1px;
-clear:both;
 }
 
-td.desc {  /* -------For styling and set the style of cell (table data)------- */
-padding:4px;
-text-align:left;
-font-family:Verdana, Arial, Helvetica, sans-serif;
-font-size:.7em;
-}
-
-
-#centerColumn {  /* -------To make the content on the navigation bar and header centered only in the middle of the page. Not fully from the left to right page.------------ */	
-margin:0 auto;
-padding:1em;
-width:720px;
-text-align:left;
-vertical-align: middle;	
-background-color:#ffffff;
-}
-
-#centerColumn-image {  /* -------To make the image on the part below header centered only in the middle of the page. Not fully from the left to right page.------------ */	
-margin:0 -1em 0 -1em;
-padding:1em;
-width:720px;
-vertical-align: middle;	
+#centerColumn-image1 {  /* -------To make the image on the part below header centered only in the middle of the page. Not fully from the left to right page.------------ */	
+width: 40%;
+height: 470px;
+float: left;
+padding: 1%; 
+margin-right: 20%;
+margin-left: 30%;
 background-color:#cccccc;
 }
 
@@ -65,13 +49,13 @@ background-color:#cccccc;
 margin:0 0 -.5em 0;
 padding:.75em 0 0 0;
 font-family:Georgia, "Times New Roman", Times, serif;
-font-size:1.1em;
+font-size:30px;
 }
 
 #centerColumn h3 { /* -------To style all the h3 sentence on the center column: in their font-family, margin, font-size, and padding------------ */
 margin:0 0 -.5em 0;
 padding:.75em 0 0 0;
-font-size:.8em;
+font-size:18px;
 font-weight:lighter;
 letter-spacing:.1em;
 }
@@ -111,6 +95,7 @@ margin:0 -1em 0 -1em;
 background: 
 padding:0 0 0 0;
 height:143px;
+width: auto;
 background-color:#cccccc;
 border-top:1px solid #ffffff;
 }
@@ -134,32 +119,37 @@ letter-spacing:.1em;
 color:#000000;
 }
 
-#cell_1 { /* -------To style and set The first cell (bigger than box) after the header------------ */
-margin:0 5px 1em 0;
-padding:8px;
+#cell_1 { /* -------To style and set The first cell (bigger than box) after the header------------ */ 
+margin-left: 1%;
+padding:1%;
+padding-left:5px; 
 float:left;
-width:210px;
+width:28%;
 background-color:#cccccc;
+border: 10px solid black;
 }
 
 #cell_2 { /* -------To style and set The second cell (bigger than box) after the header------------ */
-margin:0 14px 1em 14px;
-padding:8px;
+    margin-left: 3%;
+padding:1%;
+    padding-left: 1px;
 float:left;
-width:210px;
+width:28%;
 background-color:#cccccc;
+border: 10px solid black;
 }
 
 #cell_3 { /* -------To style and set The third cell (bigger than box) after the header------------ */
-margin:0 0 1em 5px;
-padding:8px;
-float:left;
-width:210px;
+margin-right: 1%;
+padding:1%;
+float:right;
+width:28%;
 background-color:#cccccc;
+border: 10px solid black;
 }
 
 #cell_1 p, #cell_2 p, #cell_3 p { /* -------To style and set The pharagraph on first, second, third cell (bigger than box) after the header------------ */
-font-size:.75em;
+font-size:17px;
 color:#000000;
 }
 
