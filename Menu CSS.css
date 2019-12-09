@@ -2,7 +2,8 @@
 body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
 margin:.5em; 
 padding:0; 
-height:100%; 
+height:100%;
+width: auto;
 background-color:#ffffff;
 color:#000000;  
 text-align:center;
@@ -91,17 +92,17 @@ color:#000000;
 
 /*---This is for left and right column---*/
 .column.side {
-  width: 28%; float: left; padding: 1%; border: 4px solid black; margin-right: 2%; margin-left: 2%; margin-bottom: 2%; margin-top: 2%
+  width: 23%; float: left; padding: 1%; border: 4px solid black; margin-right: 2%; margin-top: 0; margin-bottom: 2%;margin-top: 2%;margin-left: 3%;
 }
 
 /*---This Middle column----*/
 .column.middle {
-width: 28%; float: left; padding: 1%; border:  4px solid black; margin-right: 2%; margin-bottom: 2%; margin-top: 2%
+width: 23%; float: left; padding: 1%; border:  4px solid black; margin-right: 2.5%; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
 }
 
 /*---This Middle column----*/
 .column.right {
-width: 28%; float: left; padding: 1%; border: 4px solid black; margin-right: 2%; margin-top: 0; margin-bottom: 2%; margin-top: 2%
+width: 23%; float: left; padding: 1%; border: 4px solid black; margin-right: 2.5%; margin-top: 0; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
 }
 
 /*---END CONTENT---*/
@@ -130,5 +131,5 @@ img {
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width:800px) {
- body  , #navbar, #header, .row, .column.side, .column.middle, .column.right, #footer {width:96%;}
+ body  , #navbar, #header, .row, .column.side, .column.middle, .column.right, #footer {width:97%;}
 }
