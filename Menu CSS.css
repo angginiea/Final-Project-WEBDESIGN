@@ -1,0 +1,134 @@
+/* -------------STYLE FOR BODY-------------- */
+body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
+margin:.5em; 
+padding:0; 
+height:100%; 
+background-color:#ffffff;
+color:#000000;  
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:.9em;
+}
+
+#navbar { /* -------To style the navigation bar background------------ */
+margin:0 0 -1px 10px;
+height:100px;
+padding:1px 0 0 .2em;
+background-color:#cccccc;
+}
+
+#navbar ul { /* -------To style and set The block element used to designate unordered list on the navigation bar------------ */
+margin:0 0 -1em .3em !important;
+margin:.3em 0 0 .3em;
+padding:0 0 1em 0;
+list-style:none;
+background-color:#cccccc;
+}
+
+#navbar li { /* -------To style and set The block element used to represent an item in a list on the navigation bar------------ */
+margin:0 0 0 -.27em;
+padding:.2em 0 .2em 0 !important;
+padding:1em 0 1em 0;
+list-style:none;
+display:inline;
+background-color:#cccccc;
+}
+
+#navbar li a { /* -------To style and set The block element used to represent an item in a list on the navigation bar and also the hyperlink in navigation bar------------ */
+margin:0 0 0 0;
+padding:1em .5em 1em .5em !important;
+padding:1em .5em 0 .5em;
+}
+
+
+a { /* -------For styling and set the style of hyperlink in the page-------------- */
+color:#cc0000;
+text-decoration:underline;
+}
+
+a:hover { /* -------For styling and set the style of hover. Hover used to select elements when you mouse over them-------------- */
+color:#616161;
+text-decoration:none;
+}
+/*---END NAV BAR---*/
+
+#header { /* -------To style and set The header of the page------------ */
+margin:0 0 -14px 10px;
+height:143px;
+padding:10px 0 0 .1em;
+background-color:#cccccc;
+border-top:1px solid #ffffff;
+
+}
+
+#header h1 { /* -------To style and set The h1 sentence on the header of the page------------ */
+margin:0 0 -1px 10px;
+padding:10px 0 0 .9em;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.7em;
+font-weight:lighter;
+letter-spacing:.15em;
+color:#000000;
+}
+
+#header h2 { /* -------To style and set The h2 sentence on the header of the page------------ */
+margin:0 0 0 0;
+padding:1em 0 0 30px;
+font-size:.9em;
+font-weight:300;
+letter-spacing:.1em;
+color:#000000;
+}
+
+/*---END HEADER---*/
+
+/*---Clear floats after the columns----*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*---This is for left and right column---*/
+.column.side {
+  width: 28%; float: left; padding: 1%; border: 4px solid black; margin-right: 2%; margin-left: 2%; margin-bottom: 2%; margin-top: 2%
+}
+
+/*---This Middle column----*/
+.column.middle {
+width: 28%; float: left; padding: 1%; border:  4px solid black; margin-right: 2%; margin-bottom: 2%; margin-top: 2%
+}
+
+/*---This Middle column----*/
+.column.right {
+width: 28%; float: left; padding: 1%; border: 4px solid black; margin-right: 2%; margin-top: 0; margin-bottom: 2%; margin-top: 2%
+}
+
+/*---END CONTENT---*/
+
+#footer { /* -------To style and set The footer of the page------------ */
+position:relative;
+clear:both;
+bottom:0;
+margin:5em 0 0 0;
+padding:0;
+height:4em;
+line-height:4em;
+text-align:center;
+font-size:.7em;
+background-color:#cccccc;
+}
+
+img {
+    max-width: 200;
+    height: auto;
+}
+
+/*---END FOOTER---*/
+
+/*---RESPONSIVE PART---*/
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+ body  , #navbar, #header, .row, .column.side, .column.middle, .column.right, #footer {width:96%;}
+}
