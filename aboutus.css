@@ -1,0 +1,88 @@
+/* ABOUT US GROUP 3 BY FEBRINA L. R. 
+My page consists of 4 templates with different styles. 
+if you want to make more than 4 templates,
+you can use the same template.*/
+
+* {margin:0} /* to create space around elements, outside of any defined borders.*/
+  
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+    background: grey;
+}
+
+h2 {
+color: #fcdfd9; /*pink really soft*/
+}
+
+h1 {
+color: #fbbbad ; /*pink soft*/
+text-align: center;
+text-decoration: bold ;
+font-family: monospace;
+}
+
+a {
+color: red ;
+text-align: justify;
+font-family: monospace;
+}
+
+.divtop { /* to create a title, located in the middle of the top.*/
+            padding: 1%;
+            width:100%;
+            height: auto;
+            background: pink;
+            text-align: center;
+            border: 5px  solid aqua;
+
+}
+
+.navbar { /* To present the link, located at the top center.*/
+            padding: 1%;
+            height: auto;
+            width: 100%;
+            background-color: #cccccc;
+            text-align : center;
+            border: 1px solid white;
+}
+
+.divheader { /* to create a title, located in the middle of the top.*/
+            padding: 2%;
+            width: 100%;
+            height: auto;
+            background-color: #444848;
+            text-align: center;
+            border: 1px solid white;
+}
+
+.content1 { /* Put your content images here in the div (style 1) */
+            float:left;
+            background: black;
+            border: 5px solid aqua;
+            margin:5px;
+            padding:1%;
+            width : auto; 
+            height : auto;
+            text-align: center ;
+}
+.content2 { /* Put your content writing here in the div (style 2) */
+			float:right;
+			background: #69c6ba; /*tosca colour*/
+			border: 5px solid aqua;
+			margin: 5px;
+            padding:2%; 
+            width: 15%;
+            height: auto;
+			text-align: justify;			
+}
+.footer { /* used for footnotes, the bottom element. */ 
+    background: #3fcadf;
+    border: 2px;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    text-align: center;    
+    position: fixed;
+    bottom: 0px;
+}
