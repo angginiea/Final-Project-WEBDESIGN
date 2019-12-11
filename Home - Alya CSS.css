@@ -1,0 +1,130 @@
+/* -------------STYLE FOR BODY-------------- */
+body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
+margin:.5em; 
+padding:0; 
+height:100%;
+width: auto;
+background-color:#ffffff;
+color:#000000;  
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:.9em;
+}
+
+a { /* -------For styling and set the style of hyperlink in the page-------------- */
+color:#cc0000;
+text-decoration:underline;
+}
+
+a:hover { /* -------For styling and set the style of hover. Hover used to select elements when you mouse over them-------------- */
+color:#616161;
+text-decoration:none;
+}
+
+.navbar { /* -------To style the navigation bar background------------ */
+margin:-1em -1em 4 2em;
+padding:1em 0 1em 0;
+padding:1em 0 0 0;
+background-color:#cccccc;
+}
+
+.navbar ul { /* -------To style and set The block element used to designate unordered list on the navigation bar------------ */
+margin:0 0 -1em .3em;
+margin:.3em 0 0 .3em;
+padding:0 0 1em 0;
+list-style:none;
+background-color:#cccccc;
+}
+
+.navbar li { /* -------To style and set The block element used to represent an item in a list on the navigation bar------------ */
+margin:0 0 0 -.27em;
+padding:.2em 0 .2em 0;
+padding:1em 0 1em 0;
+list-style:none;
+display:inline;
+background-color:#cccccc;
+}
+
+.navbar li a { /* -------To style and set The block element used to represent an item in a list on the navigation bar and also the hyperlink in navigation bar------------ */
+margin:0 0 0 0;
+padding:1em .5em 1em .5em;
+padding:1em .5em 0 .5em;
+}
+
+.header { /* -------To style and set The header of the page------------ */
+margin:0 -1em 4 2em;
+padding:0 0 0 0;
+height:143px;
+width: auto;
+background-color:#cccccc;
+border-top:1px solid #ffffff;
+}
+
+.header h1 { /* -------To style and set The h1 sentence on the header of the page------------ */
+margin:0 0 -14px 10px;
+padding:10px 0 0 .9em;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.7em;
+font-weight:lighter;
+letter-spacing:.15em;
+color:#000000;
+}
+
+.header h2 { /* -------To style and set The h2 sentence on the header of the page------------ */
+margin:0 0 0 0;
+padding:1em 0 0 30px;
+font-size:.9em;
+font-weight:300;
+letter-spacing:.1em;
+color:#000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#cccccc;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+}
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+
+.main h2 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:20px;
+}
+
+.right {
+  background-color:#cccccc;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+.footer { /* -------To style and set The footer of the page------------ */
+background-color:#cccccc;
+text-align:center;
+padding:10px;
+margin-top:7px;
+font-size:.7em
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+ body, a, a:hover, hr, .navbar, .navbar ul, .navbar li, .navbar li a, .header, .header h1, .header h2, .menu, .menu a, .main, .right, .footer  {
+    width:100%;
+  }
