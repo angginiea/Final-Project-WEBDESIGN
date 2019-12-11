@@ -1,88 +1,79 @@
-/* ABOUT US GROUP 3 BY FEBRINA L. R. 
-My page consists of 4 templates with different styles. 
-if you want to make more than 4 templates,
-you can use the same template.*/
+/* ABOUT US GROUP 3 BY FEBRINA L. R. */
+* {margin:0 auto} /* to create space around elements, outside of any defined borders.*/
 
-* {margin:0} /* to create space around elements, outside of any defined borders.*/
-  
 body {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-weight: 300;
-    background: grey;
+    background-image: url(images/marbleblack.jpg);
 }
 
-h2 {
-color: #fcdfd9; /*pink really soft*/
-}
-
-h1 {
-color: #fbbbad ; /*pink soft*/
-text-align: center;
-text-decoration: bold ;
+h1 h2 {
+color: black;
+text-align: center justify ;
+text-decoration: bold;
 font-family: monospace;
 }
 
 a {
-color: red ;
+color: #575757 ; /*grey*/
+font-size: 16px;
 text-align: justify;
 font-family: monospace;
 }
 
-.divtop { /* to create a title, located in the middle of the top.*/
-            padding: 1%;
-            width:100%;
-            height: auto;
-            background: pink;
+.container { /* to create a title, located in the middle of the top.*/
+            width: 90%;
+            border: 10px solid #575757; /*grey*/
             text-align: center;
-            border: 5px  solid aqua;
-
+            float: center;
 }
 
 .navbar { /* To present the link, located at the top center.*/
-            padding: 1%;
+            padding: 2%;
             height: auto;
-            width: 100%;
-            background-color: #cccccc;
+            width: 97%;
             text-align : center;
-            border: 1px solid white;
+            background-image: url(images/marbel.jpg);
 }
+
+.navbar a { color: red;
+}
+
 
 .divheader { /* to create a title, located in the middle of the top.*/
             padding: 2%;
-            width: 100%;
+            width: 97%;
             height: auto;
-            background-color: #444848;
             text-align: center;
-            border: 1px solid white;
+            background-image: url(images/marbel.jpg);
 }
 
 .content1 { /* Put your content images here in the div (style 1) */
-            float:left;
-            background: black;
-            border: 5px solid aqua;
-            margin:5px;
+            float:center;
+            background-image: url(images/marbel.jpg);
+            border: 1px solid white;
             padding:1%;
-            width : auto; 
-            height : auto;
-            text-align: center ;
+            max-width: 1000px;
+            height: auto;
+            text-align: center;
 }
 .content2 { /* Put your content writing here in the div (style 2) */
-			float:right;
-			background: #69c6ba; /*tosca colour*/
-			border: 5px solid aqua;
-			margin: 5px;
-            padding:2%; 
-            width: 15%;
+			float:center;
+            background-image: url(images/marbel.jpg);
+            border: 1px solid white;
+            padding:1%; 
+            max-width: 300px;
             height: auto;
-			text-align: justify;			
+            text-align: justify;	
 }
 .footer { /* used for footnotes, the bottom element. */ 
-    background: #3fcadf;
-    border: 2px;
-    width: 100%;
-    height: auto;
-    padding: 1%;
-    text-align: center;    
-    position: fixed;
-    bottom: 0px;
+            background-color: #575757; /*grey*/
+            width: 100%;
+            height: auto;
+            padding: 1%;
+            text-align: center;
+            bottom: 0px;
+            position: fixed;
+}
+
+@media screen and (max-width: 200px){
+body .container .navbar .divheader .content1 .content2 .footer {width: 90%;}
 }
