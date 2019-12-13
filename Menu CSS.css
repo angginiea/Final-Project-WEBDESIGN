@@ -1,82 +1,112 @@
 /* -------------STYLE FOR BODY-------------- */
-body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
-margin:.5em; 
+body {
+margin: 8px; 
 padding:0; 
 height:100%;
 width: auto;
-background-color:#ffffff;
 color:#000000;  
 text-align:center;
-font-family:Arial, Helvetica, sans-serif;
-font-size:.9em;
+font-family:sans-serif;
+font-size:14.4px;
 }
 
-#navbar { /* -------To style the navigation bar background------------ */
-margin:0 0 -1px 10px;
-height:100px;
-padding:1px 0 0 .2em;
-background-color:#cccccc;
-background-image: url(images/marbel.jpg);
+/*---RESPONSIVE FOR BODY---*/
+
+@media screen and (max-width:800px) {
+ body {
+     width:100%;
+     background-color: #000000;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:2000px) {
+ body {
+     width:100%;
+     background-color: #ffffff;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---NAVBAR PART---*/
+
+#navbar {
+    padding-top: 4px;
+    height: 90px;
+    background-color:#cccccc;
+    background-image: url(images/marbel.jpg);
     font-size: 20px;
-    font-family:Georgia, "Times New Roman", Times, serif;
 }
 
-#navbar ul { /* -------To style and set The block element used to designate unordered list on the navigation bar------------ */
-margin:0 0 -1em .3em !important;
-margin:.3em 0 0 .3em;
-padding:0 0 1em 0;
+#navbar ul { 
 list-style:none;
 }
 
-#navbar li { /* -------To style and set The block element used to represent an item in a list on the navigation bar------------ */
-margin:0 0 0 -.27em;
-padding:.2em 0 .2em 0 !important;
-padding:1em 0 1em 0;
-list-style:none;
+#navbar li {
 display:inline;
 }
 
-#navbar li a { /* -------To style and set The block element used to represent an item in a list on the navigation bar and also the hyperlink in navigation bar------------ */
+#navbar li a { 
 margin:0 0 0 0;
-padding:1em .5em 1em .5em !important;
-padding:1em .5em 0 .5em;
+font-family:"Times New Roman";
 }
 
-
-a { /* -------For styling and set the style of hyperlink in the page-------------- */
+a { 
 color:#cc0000;
 text-decoration:underline;
 }
 
 a:hover { /* -------For styling and set the style of hover. Hover used to select elements when you mouse over them-------------- */
 color:#616161;
-text-decoration:none;
 }
+
 /*---END NAV BAR---*/
 
-#header { /* -------To style and set The header of the page------------ */
-margin:0 0 -14px 10px;
+/*---RESPONDSIVE FOR NAVBAR---*/
+
+@media screen and (max-width:800px) {
+ #navbar {
+     width:100%;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#header { 
 height:143px;
-padding:10px 0 0 .1em;
 background-color:#cccccc;
-border-top:1px solid #ffffff;
 background-image: url(images/marbel.jpg);
 
 }
 
-#header h1 { /* -------To style and set The h1 sentence on the header of the page------------ */
-margin:0 0 -1px 10px;
-padding:10px 0 0 .9em;
-font-family:Georgia, "Times New Roman", Times, serif;
-font-size:1.7em;
-font-weight:lighter;
-letter-spacing:.15em;
+#header h1 { 
+margin:0 0 7px 10px;
+    /*--- top margin is 0
+    ----- right margin is 0
+    ----- bottom margin is 7px
+    ----- left margin is 10px ---*/
+    
+padding:10px 0 0 14.4px;
+    /*--- top padding is 10px
+    ----- right padding is 0
+    ----- bottom padding is 0
+    ----- left padding is 14.4px ---*/
+    
+font-family:"Times New Roman";
+font-size:27.2px;
+letter-spacing:2.4px;
 color:#000000;
 }
 
-#header h2 { /* -------To style and set The h2 sentence on the header of the page------------ */
-margin:0 0 0 0;
-padding:1em 0 0 30px;
+#header h2 { 
+padding:0 0 0 30px;
+    /*--- top padding is 0
+    ----- right padding is 0
+    ----- bottom padding is 0
+    ----- left padding is 30px ---*/
 font-size:.9em;
 font-weight:300;
 letter-spacing:.1em;
@@ -85,38 +115,78 @@ color:#000000;
 
 /*---END HEADER---*/
 
-/*---Clear floats after the columns----*/
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/*---RESPONDSIVE FOR NAVBAR---*/
+
+@media screen and (max-width: 600px) {
+ #header {
+     width:100%;
+     border-top: 2px solid #FCBA03;
+    }
 }
+
+@media screen and (min-width:601px) and (max-width:2000px) {
+ #header {
+     width:100%;
+     border-top:1px solid #000000;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*---This is for left and right column---*/
 .column.side {
-  width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2%; margin-top: 0; margin-bottom: 2%;margin-top: 2%;margin-left: 3%; background-color:#cccccc; 
+  width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2%; margin-top: 0; margin-bottom: 2%;margin-top: 2%;margin-left: 3%;
 }
 
 /*---This Middle column----*/
 .column.middle {
-width: 23%; float: left; padding: 1%; border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;background-color:#cccccc;
+width: 23%; float: left; padding: 1%; border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
 }
 
 /*---This Middle column----*/
 .column.right {
-width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-top: 0; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;background-color:#cccccc;
+width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-top: 0; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
 }
 
 /*---END CONTENT---*/
 
-#footer { /* -------To style and set The footer of the page------------ */
-position:relative;
+/*---RESPONDSIVE FOR CONTENT---*/
+
+@media screen and (max-width: 800px) {
+    .column.side,
+    .column.middle,
+    .column.right
+    {
+     width:100%;
+     background-color: #ffffff;
+    }
+}
+
+@media screen and(min-width:800px) and (max-width:2000px) {
+    .column.side,
+    .column.middle,
+    .column.right
+    {
+     width:100%;
+     background-color:#cccccc;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+#footer { 
 clear:both;
 bottom:0;
-margin:5em 0 0 0;
-padding:0;
-height:4em;
-line-height:4em;
+margin:80px 0 0 0;
+    /*--- top margin is 80px
+    ----- right margin is 0
+    ----- bottom margin is 0px
+    ----- left margin is 0px ---*/
+height:64px;
+line-height:64px;
 text-align:center;
 font-size:15px;
 background-color:#cccccc;
@@ -132,7 +202,4 @@ img {
 
 /*---RESPONSIVE PART---*/
 
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width:800px) {
- body  , #navbar, #header, .row, .column.side, .column.middle, .column.right, #footer {width:97%;}
 }
