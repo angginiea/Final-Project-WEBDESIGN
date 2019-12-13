@@ -1,205 +1,108 @@
-/* -------------STYLE FOR BODY-------------- */
-body {
-margin: 8px; 
-padding:0; 
-height:100%;
-width: auto;
-color:#000000;  
-text-align:center;
-font-family:sans-serif;
-font-size:14.4px;
-}
+<!DOCTYPE html>
 
-/*---RESPONSIVE FOR BODY---*/
+<!---Head begin--->
 
-@media screen and (max-width:800px) {
- body {
-     width:100%;
-     background-color: #000000;
-    }
-}
+<head>
+<title> Menu At Delicioso
+    </title>
+<link rel="stylesheet" href="Menu%20CSS.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-@media screen and (min-width:801px) and (max-width:2000px) {
- body {
-     width:100%;
-     background-color: #ffffff;
-    }
-}
+<!---End Head--->
 
-
-/*----------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*---NAVBAR PART---*/
-
-#navbar {
-    padding-top: 4px;
-    height: 90px;
-    background-color:#cccccc;
-    background-image: url(images/marbel.jpg);
-    font-size: 20px;
-}
-
-#navbar ul { 
-list-style:none;
-}
-
-#navbar li {
-display:inline;
-}
-
-#navbar li a { 
-margin:0 0 0 0;
-font-family:"Times New Roman";
-}
-
-a { 
-color:#cc0000;
-text-decoration:underline;
-}
-
-a:hover { /* -------For styling and set the style of hover. Hover used to select elements when you mouse over them-------------- */
-color:#616161;
-}
-
-/*---END NAV BAR---*/
-
-/*---RESPONDSIVE FOR NAVBAR---*/
-
-@media screen and (max-width:800px) {
- #navbar {
-     width:100%;
-    }
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------*/
-
-
-#header { 
-height:143px;
-background-color:#cccccc;
-background-image: url(images/marbel.jpg);
-
-}
-
-#header h1 { 
-margin:0 0 7px 10px;
-    /*--- top margin is 0
-    ----- right margin is 0
-    ----- bottom margin is 7px
-    ----- left margin is 10px ---*/
+<body>
+    <div id="navbar">
+       <li> <a href="Home.html">Home</a> </li>     
+<!---WRITE YOUR NAVIGATION BAR MENU HERE--->
+       <li> <a href="Aboutus.html">About Us</a> </li> 
+<!---WRITE YOUR NAVIGATION BAR MENU HERE--->
+       <li> <a href="Menu.html">Our Menu</a> </li> 
+<!---WRITE YOUR NAVIGATION BAR MENU HERE--->
+       <li> <a href="contact.html">Contact</a> </li>  
+<!---WRITE YOUR NAVIGATION BAR MENU HERE--->
+    </div>
     
-padding:10px 0 0 14.4px;
-    /*--- top padding is 10px
-    ----- right padding is 0
-    ----- bottom padding is 0
-    ----- left padding is 14.4px ---*/
+<!---HEADER---> 
+  
+<div id="header">
+    <br>
+    <br>
+    <h1> Delicioso Restaurant </h1>                   
+    <!-------WRITE YOUR WEB TITLE HERE-------->
+    <h2> Best Italian Restaurant You Ever Know </h2>  
+    <!-------WRITE SOME TEXT BELOW TITLE------->
+  </div>
     
-font-family:"Times New Roman";
-font-size:27.2px;
-letter-spacing:2.4px;
-color:#000000;
-}
+<!--END HEADER--->    
+    
+    <div class="column side">
+        <h2><i> Fettuccine alfredo</i> </h2>
+        <img src="images/Fettuccinealfredo.png" width="200" height="200";>
+        <h4> creamiest Fettucine Alfredo <br> in the word </h4> 
+        <p> Rp 65.000,- </p>
+    </div>
+    
+    <!---END LEFT SIDE--->
+    
+    <div class="column middle">
+    <h2><i> Lasagna</i> </h2>
+        <br>
+        <img src="images/lasagna.png" width="200" height="200";>
+        <h4>this lasagna is very delicioso!</h4>
+        <p> Rp. 62.000,- </p>
+    </div>
+    
+    <!---END MIDDLE SIDE--->
+    
+    <div class="column right">
+    <h2><i> Saltimbocca Chicken </i></h2>
+        <img src="images/SaltimboccaChicken.png" width="200" height="200";>
+        <h4> this Saltimbocca Chicken is different from other restaurant!! </h4>
+        <p> Rp 70.000,- </p>
+    </div>
+    
+    <!---END RIGHT SIDE--->
+    <!---ALSO END PARAGRAF--->
+    
+    
+    <!---BEGIN SECOND PARAGRAF--->
+    
+    <div class="row">
+    <div class="column side">
+        <h2> <i> Penne alla Vodka </i></h2>
+        <img src="images/penne%20alla%20vodka.png" width="200" height="200";>
+        <br>
+        <h4> With delicioso ingredients will make <br>your belly full </h4> <p> Rp 50.000,- </p>
+    </div>
+        
+    <!---END LEFT SIDE--->
+        
+    <div class="column middle">
+        <h2> <i> Aperetivo </i> </h2>
+        <img src="images/Aperetivo.png" width="200" height="200";>
+        <h4>If you want drink in our restaurant 
+          this is best seller drinks</h4>
+        <p> Rp. 33.000,- </p>
+    </div>
+        
+    <!---END MIDDLE SIDE--->
+        
+    <div class="column right">
+        <h2> <i>Panna Cotta</i> </h2>
+        <img src="images/Panna%20Cotta.png" width="200" height="200";>
+        <br>
+        <h4> this Panna Cotta is different from other restaurant! </h4>
+        <p> Rp 70.000,- </p>
+    </div>
+        
+    <!---END RIGHT SIDE--->
+    <!---ALSO END CONTENT--->
+        
+        <div id="footer">Web Design Assignment 2019 - Group 3 </div>
+        
+  <!--//end #footer//-->
+    
+</div>
 
-#header h2 { 
-padding:0 0 0 30px;
-    /*--- top padding is 0
-    ----- right padding is 0
-    ----- bottom padding is 0
-    ----- left padding is 30px ---*/
-font-size:.9em;
-font-weight:300;
-letter-spacing:.1em;
-color:#000000;
-}
-
-/*---END HEADER---*/
-
-/*---RESPONDSIVE FOR NAVBAR---*/
-
-@media screen and (max-width: 600px) {
- #header {
-     width:100%;
-     border-top: 2px solid #FCBA03;
-    }
-}
-
-@media screen and (min-width:601px) and (max-width:2000px) {
- #header {
-     width:100%;
-     border-top:1px solid #000000;
-    }
-}
-
-
-/*----------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*---This is for left and right column---*/
-.column.side {
-  width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2%; margin-top: 0; margin-bottom: 2%;margin-top: 2%;margin-left: 3%;
-}
-
-/*---This Middle column----*/
-.column.middle {
-width: 23%; float: left; padding: 1%; border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
-}
-
-/*---This Middle column----*/
-.column.right {
-width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-top: 0; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
-}
-
-/*---END CONTENT---*/
-
-/*---RESPONDSIVE FOR CONTENT---*/
-
-@media screen and (max-width: 800px) {
-    .column.side,
-    .column.middle,
-    .column.right
-    {
-     width:100%;
-     background-color: #ffffff;
-    }
-}
-
-@media screen and(min-width:800px) and (max-width:2000px) {
-    .column.side,
-    .column.middle,
-    .column.right
-    {
-     width:100%;
-     background-color:#cccccc;
-    }
-}
-
-
-/*----------------------------------------------------------------------------------------------------------------------------------*/
-
-#footer { 
-clear:both;
-bottom:0;
-margin:80px 0 0 0;
-    /*--- top margin is 80px
-    ----- right margin is 0
-    ----- bottom margin is 0px
-    ----- left margin is 0px ---*/
-height:64px;
-line-height:64px;
-text-align:center;
-font-size:15px;
-background-color:#cccccc;
-background-image: url(images/marbel.jpg);
-}
-
-img {
-    max-width: 200;
-    height: auto;
-}
-
-/*---END FOOTER---*/
-
-/*---RESPONSIVE PART---*/
-
-}
+</body>
