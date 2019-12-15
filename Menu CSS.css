@@ -1,8 +1,11 @@
 /* -------------STYLE FOR BODY-------------- */
 body {
-margin: 8px; 
+margin: 8px 0 0 0; 
+    /*--- top margin is 8px
+    ----- right margin is 0
+    ----- bottom margin is 0
+    ----- left margin is 0 ---*/
 padding:0; 
-height:100%;
 width: auto;
 color:#000000;  
 text-align:center;
@@ -12,14 +15,14 @@ font-size:14.4px;
 
 /*---RESPONSIVE FOR BODY---*/
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:600px) {
  body {
      width:100%;
      background-color: #000000;
     }
 }
 
-@media screen and (min-width:801px) and (max-width:2000px) {
+@media screen and (min-width:600px) and (max-width:2000px) {
  body {
      width:100%;
      background-color: #ffffff;
@@ -38,6 +41,7 @@ font-size:14.4px;
     background-color:#cccccc;
     background-image: url(images/marbel.jpg);
     font-size: 20px;
+    margin-left: 10px;
 }
 
 #navbar ul { 
@@ -49,7 +53,6 @@ display:inline;
 }
 
 #navbar li a { 
-margin:0 0 0 0;
 font-family:"Times New Roman";
 }
 
@@ -79,6 +82,7 @@ color:#616161;
 height:143px;
 background-color:#cccccc;
 background-image: url(images/marbel.jpg);
+    margin-left: 10px;
 
 }
 
@@ -89,7 +93,7 @@ margin:0 0 7px 10px;
     ----- bottom margin is 7px
     ----- left margin is 10px ---*/
     
-padding:10px 0 0 14.4px;
+padding:4px 0 0 15px;
     /*--- top padding is 10px
     ----- right padding is 0
     ----- bottom padding is 0
@@ -137,17 +141,17 @@ color:#000000;
 
 /*---This is for left and right column---*/
 .column.side {
-  width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2%; margin-top: 0; margin-bottom: 2%;margin-top: 2%;margin-left: 3%;
+  width: 25%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 5%; margin-top: 0; margin-bottom: 2%;margin-top: 2%;
 }
 
 /*---This Middle column----*/
 .column.middle {
-width: 23%; float: left; padding: 1%; border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
+width: 25%; float: left; padding: 1%; border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 5%; margin-bottom: 2%; margin-top: 2%;
 }
 
 /*---This Middle column----*/
 .column.right {
-width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 2.5%; margin-top: 0; margin-bottom: 2%; margin-top: 2%; margin-left: 3%;
+width: 25%; float: left; padding: 1%;border: 6px solid transparent; border-image: url(images/marbleblack.jpg) 30 round; margin-right: 5%; margin-top: 0; margin-bottom: 2%; margin-top: 2%;
 }
 
 /*---END CONTENT---*/
@@ -180,11 +184,11 @@ width: 23%; float: left; padding: 1%;border: 6px solid transparent; border-image
 #footer { 
 clear:both;
 bottom:0;
-margin:80px 0 0 0;
-    /*--- top margin is 80px
+margin:0 0 0 25px;
+    /*--- top margin is 0
     ----- right margin is 0
-    ----- bottom margin is 0px
-    ----- left margin is 0px ---*/
+    ----- bottom margin is 0
+    ----- left margin is 25px ---*/
 height:64px;
 line-height:64px;
 text-align:center;
