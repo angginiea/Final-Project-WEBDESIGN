@@ -1,197 +1,285 @@
 /* -------------STYLE FOR BODY-------------- */
-body {   /* -------For styling and set the body section that contains content, images, etc. Like set the font-color, background color, font family, margin, etc.-------------- */
-margin:.5em; 
-padding:0; 
+*{
+padding:0;
+margin:0;
+}
+body {
 height:100%;
 width: auto;
-background-color:#ffffff;
-color:#000000;  
+color:#000000; 
 text-align:center;
-font-family:Arial, Helvetica, sans-serif;
-font-size:.9em;
+font-family:sans-serif;
+font-size:14.4px;
+}
+        
+.wrapper{
+width: 80%;
+height: 50%;
+margin-left: 12%;
+background-color: grey;
 }
 
-#navbar { /* -------To style the navigation bar background------------ */
-margin:0 0 -1px 10px;
-height:100px;
-padding:1px 0 0 2PX;
-background-color:#cccccc;
-background-image: url(images/marbel.jpg);
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---NAVBAR PART---*/
+
+#navbar {
+    padding-top: 4px;
+    height: 90px;
+    background-color:#cccccc;
+    background-image: url(images/marbel.jpg);
     font-size: 20px;
-    font-family:Georgia, "Times New Roman", Times, serif;
 }
 
-#navbar ul { /* -------To style and set The block element used to designate unordered list on the navigation bar------------ */
-margin:0 0 -1px 3px;
-margin:3px 0 0 3px;
-padding:0 0 1px 0;
+#navbar ul { 
 list-style:none;
 }
 
-#navbar li { /* -------To style and set The block element used to represent an item in a list on the navigation bar------------ */
-margin:0 0 0 27px;
-padding:2px 2px 0 2px 0;
-padding:1px 0 1px 0;
-list-style:none;
+#navbar li {
 display:inline;
 }
 
-#navbar li a { /* -------To style and set The block element used to represent an item in a list on the navigation bar and also the hyperlink in navigation bar------------ */
+#navbar li a { 
 margin:0 0 0 0;
-padding:1px 5px 1px 5px;
-padding:1px 5px 0 5px;
+font-family:"Times New Roman";
 }
 
-
-a { /* -------For styling and set the style of hyperlink in the page-------------- */
+a { 
 color:#cc0000;
 text-decoration:underline;
 }
 
 a:hover { /* -------For styling and set the style of hover. Hover used to select elements when you mouse over them-------------- */
 color:#616161;
-text-decoration:none;
 }
+
 /*---END NAV BAR---*/
 
-#header { /* -------To style and set The header of the page------------ */
-margin:0 0 -14px 10px;
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#header { 
 height:143px;
-padding:10px 0 0 1px;
 background-color:#cccccc;
-border-top:1px solid #ffffff;
 background-image: url(images/marbel.jpg);
 
 }
 
-#header h1 { /* -------To style and set The h1 sentence on the header of the page------------ */
-margin:0 0 -5px 30px;
-padding:2px 0 0 9px;
-font-family: serif;
-font-size:30px;
-font-weight:lighter;
-letter-spacing:10px;
+#header h1 { 
+margin:0 0 7px 10px;
+    /*--- top margin is 0
+    ----- right margin is 0
+    ----- bottom margin is 7px
+    ----- left margin is 10px ---*/
+    
+padding:10px 0 0 14.4px;
+    /*--- top padding is 10px
+    ----- right padding is 0
+    ----- bottom padding is 0
+    ----- left padding is 14.4px ---*/
+    
+font-family:"Times New Roman";
+font-size:27.2px;
+letter-spacing:2.4px;
 color:#000000;
 }
 
-#header h2 { /* -------To style and set The h2 sentence on the header of the page------------ */
-margin:5px 0 0 0;
-padding:1px 0 0 30px;
-font-size: 20px;
+#header h2 { 
+padding:0 0 0 30px;
+    /*--- top padding is 0
+    ----- right padding is 0
+    ----- bottom padding is 0
+    ----- left padding is 30px ---*/
+font-size:.9em;
 font-weight:300;
-letter-spacing:2px;
+letter-spacing:.1em;
 color:#000000;
 }
 
 /*---END HEADER---*/
-.wrapper {
-	width: 100%;
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----START THE CONTENT----*/
+
+/*----This is the left column----*/
+.column.side {
+  width: 23%; 
+  float: left; 
+  padding: 1%;      
+  margin-right: 2%;
+  margin-top: 0; 
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 2%; 
+
 }
 
-.leftdiv {
-	width: 23%;
-	float: left; 
-	padding: 5%;
-	border: 10px solid transparent; 
-	border-image: url(images/marbleblack.jpg) 5% round; 
-	margin-right: 2%; 
-	margin-top: 0; 
-	margin-bottom: 2%;
-	margin-top: 2%;
-	margin-left: 3%; 
-	background-color:#cccccc; 
-	text-align: center;
+/*----This is the middle column----*/
+.column.middle {
+  width: 23%; 
+  float: left; 
+  padding: 1%;  
+  margin-right: 2.5%; 
+  margin-bottom: 2%; 
+  margin-top: 2%; 
+  margin-left: 3%; 
+  
 }
 
-.para1 {
-	margin:0 0 -1px 10px;
-	padding:10px 0 0 .9em;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size: 30px;
-	font-weight:lighter;
-	letter-spacing:.15em;
-	color:#000000;
-	text-align: center;
+/*----This is the right column----*/
+.column.right {
+  width: 23%; 
+  float: left; 
+  padding: 1%;
+  margin-right: 2.5%; 
+  margin-top: 0; 
+  margin-bottom: 2%; 
+  margin-top: 2%; 
+  margin-left: 3%; 
+
 }
 
-.leftdiv h1 {
-	margin:0 0 -1px 10px;
-	padding:10px 0 0 .9em;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:1.7em;
-	font-weight:lighter;
-	letter-spacing:.15em;
-	color:#000000;
-	text-align: center;
+/*---Specification for image in content---*/
+img {
+    max-width: 200;
+    height: auto;
+}
+/*---End specification image in content---*/
+
+
+/*----END CONTENT----*/
+
+
+/*---THIS IS RESPONSIVE CONTENT---*/
+
+@media screen and (max-width: 767px) {
+    .column.side,
+    .column.middle,
+    .column.right /*----Calling right, middle, and left column
+                  with specification : width 100%, have white marbel 
+                  background color, 6px marbel black border image with 30 texture round----*/
+    {
+     width:100%;
+     background-image: url(images/marbel.jpg); 
+     border: 6px solid transparent; 
+     border-image: url(images/marbleblack.jpg) 30 round; 
+    }
 }
 
-.leftdiv h2 {
-	margin:0 0 0 0;
-	padding:1em 0 0 30px;
-	font-size: 20px;
-	font-weight:300;
-	letter-spacing:.1em;
-	color:#000000;
-	text-align: center;
+@media screen and(min-width:768px) and (max-width:1000px) {
+    .column.side,
+    .column.middle,
+    .column.right /*----Calling right, middle, and left column
+                  with specification : width 100%, have black marbel 
+                  background color, 6px marbel black border image with 30 texture round----*/
+    {
+     width:100%;
+     background-image: url(images/marbleblack.jpg);
+     border: 6px solid transparent; 
+     border-image: url(images/marbleblack.jpg) 30 round; 
+     
+    }
 }
 
 .rightdiv {
-	width: 43%;
-	float: left; 
-	padding: 4.1%;
-	border: 10px solid transparent; 
-	border-image: url(images/marbleblack.jpg) 30% round; 
-	margin-right: 2%; 
-	margin-top: 0; 
-	margin-bottom: 2%;
-	margin-top: 2%;
-	margin-left: 3%; 
-	background-color:#cccccc; 
-	text-align: center;
-}
-
-.rightdiv h3 {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size: 30px;
-	font-weight:lighter;
-	letter-spacing:.15em;
-	text-align: center;
+ width: 70%;
+ float: left; 
+ padding: 4.1%;
+ border: 6px solid transparent; 
+ border-image: url(images/marbleblack.jpg) 30% round; 
+ background-image: url(images/marbel.jpg);
+ margin-right: 7%;  
+ margin-bottom: 2%;
+ margin-top: 2%;
+ margin-left: 10%;  
+ text-align: center;
 }
 
 .rightdiv p {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size: 30px;
-	font-weight:lighter;
-	letter-spacing:.15em;
-	text-align: center;
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size: 30px;
+ font-weight:lighter;
+ letter-spacing:.15em;
+ text-align: center;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---START FOOTER---*/
+#footer { 
+clear:both;
+bottom:0;
+margin:80px 0 0 0;
+    /*--- top margin is 80px
+    ----- right margin is 0
+    ----- bottom margin is 0px
+    ----- left margin is 0px ---*/
+height:64px;
+line-height:64px;
+text-align:center;
+font-size:15px;
+background-color:#cccccc;
+background-image: url(images/marbel.jpg);
+}
+/*---END FOOTER---*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---RESPONSIVE FOR BODY---*/
+
+@media screen and (max-width:767px) {
+ body {
+     width:100%;
+     background-color: #FFFFFF; /*----Calling all body from 0px (Minimal) until 767px (Maximal)
+                  with specification : width 100% and have a white background color----*/
+    }
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+@media screen and (min-width:768px) and (max-width:1378px) {
+ body {
+     width:100%;
+     background-image:url(images/marbleblack.jpg); /*----Calling all body from 768px (Minimal) until 1378px (Maximal)
+                  with specification : width 100% and have a marble black background color----*/
+    }
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+/*---RESPONDSIVE FOR NAVBAR---*/
+
+@media screen and (max-width:600px) {
+ #navbar {
+     width: 100%;
+     border-top: 6px solid #808080; /*----Calling for navbar width 0px (Minimal) until 600px 
+                                    (Maximal) with specification : width 100% and have 6px 
+                                    grey border color in top ----*/
+    }
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+
+/*---RESPONDSIVE FOR NAVBAR---*/
+
+@media screen and (max-width: 600px) {
+ #header {
+     width:100%;
+     border-bottom: 6px solid #808080; /*----Calling for header width 0px (Minimal) until 600px 
+                                    (Maximal) with specification : width 100% and have 6px 
+                                    grey border color in bottom ----*/
+    }
 }
+
+/*---RESPONSIVE RIGHTDIV---*/
+
+@media screen and (max-width: 500px) {
+    .rightdiv, .rightdiv p {
+        display: none; /*----Calling for rightdiv width 0px (Minimal) until 500px 
+                        (Maximal) with specification : delete the display of rightdiv ----*/
+    }
+}
+
+
+
